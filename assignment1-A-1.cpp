@@ -1,4 +1,4 @@
-/* Here we go */
+/* A program to find the maximum of a collection on integers. */
 
 #include <iostream>
 using namespace std;
