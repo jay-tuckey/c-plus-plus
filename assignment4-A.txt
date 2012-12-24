@@ -1,0 +1,31 @@
+1. Constructors can have names different from their classes.
+
+False. Constructors always have the same name as their class, as defined by C++ syntax.
+
+2. Destructors have default arguments.
+
+False. Destructors have no arguments, since they are called implicitly when the object is destroyed.
+
+3. If a program uses the delete operator, a destructor is not needed.
+
+False. The delete operator calls the destructor of the object it is deleting.
+
+4. Explicit constructors need to be included in every class.
+
+False. If you don't specify a constuctor, the compiler creates a default constructor. However, it is best to create a constructor that sets all the data members of the class to some sensible value.
+
+5. Destructors are called each time an object goes out of existence.
+
+True.
+
+6. A class can have several default constructor functions.
+
+True. You can use different constructors so that the object can be created with different parameters, if needed.
+
+7. Constructors need to be declared for each class.
+
+False. Constructors only need to be declared if the class constructor has parameters without a default value.
+
+8. Constructors are automatically called when objects are created.
+
+True.
