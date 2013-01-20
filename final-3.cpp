@@ -1,4 +1,4 @@
-/* Here we go */
+/* Final project 3 */
 
 #include <iostream>
 #include <fstream>
@@ -6,21 +6,23 @@
 using namespace std;
 
 int main() {
+  // Create some variables
   int c, wordCounter = 0;
   bool wordStarted;
-
+  
+  // Open input and output files
   ifstream infile("input.txt", ios::in);
   if(!infile) {
     cerr << "Input file failed to open" << endl;
     exit(1);
   }
-
   ofstream outfile("output.txt", ios::out);
   if(!outfile) {
     cerr << "Output file failed to open" << endl;
     exit(1);
   }
 
+  // Loop through the file, adding up the words, and then printing the number when the word ends;
   c = infile.get();
   while(!infile.eof()) {
     if(c >= 97 && c <= 122) {

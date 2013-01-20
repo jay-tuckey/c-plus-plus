@@ -1,9 +1,10 @@
-/* Here we go */
+/* Final project 5 */
 
 #include <iostream>
 #include <stdexcept>
 using namespace std;
 
+// The square class
 class square {
 public:
   square(float s = 1) {
@@ -21,6 +22,7 @@ protected:
   float side;
 };
 
+// The cube class, using public inheritence, so it can access the protected variable
 class cube : public square {
 public:
   cube(float s = 1) {
@@ -36,6 +38,7 @@ public:
 };
 
 int main() {
+  // A square and a cube
   square a(5.4);
   cube b(5.4);
 

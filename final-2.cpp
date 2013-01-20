@@ -1,4 +1,4 @@
-/* Here we go */
+/* Final project 2 */
 
 #include <iostream>
 #include <stdexcept>
@@ -16,6 +16,7 @@ public:
     
   }
 
+  // Make an operator to allow incrementing the time by one second.
   void operator++(int s) {
     if(secs != 59)
       ++secs;
@@ -32,6 +33,7 @@ public:
     checkAlarm();
   }
 
+  // Check if it is time to set off the alarm
   void checkAlarm() {
     if(!aon)
       return;
@@ -111,15 +113,17 @@ public:
     aon = true;
   }
 
+  // Now a set of functions for setting up the alarm's time
+
   void asetHours(int h) {
     if(h < 0)
       throw invalid_argument("Can't set the hours to less than 0");
     if(0 == h) {
       ahours = 12;
       aalternateAm();
-    } else if(h < 13) {
+    } else if(h < 12) {
       ahours = h;
-    } else if(h < 25) {
+    } else if(h < 24) {
       ahours = h-12;
       aalternateAm();
     } else

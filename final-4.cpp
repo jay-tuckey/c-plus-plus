@@ -1,4 +1,4 @@
-/* Here we go */
+/* Final project 4 */
 
 #include <iostream>
 using namespace std;
