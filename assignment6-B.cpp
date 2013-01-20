@@ -9,13 +9,15 @@ using namespace std;
 const unsigned int numLetters = 26;
 
 int main() {
-
+  // Create the variables
   unsigned int letters[numLetters], lines;
 
+  // Function prototypes
   void initialiseVars(unsigned int *, unsigned int &);
   void copyTxt(ifstream &, ofstream &, unsigned int *, unsigned int &);
   void writeTotal(unsigned int *, unsigned int &);
 
+  // Open input file
   ifstream inFile( "textinput" , ios::in );
 
   if( !inFile ) {
@@ -23,6 +25,7 @@ int main() {
     exit(1);
   }
 
+  // Open output file
   ofstream outFile( "textoutput", ios::out );
 
   if( !outFile ) {
@@ -30,14 +33,21 @@ int main() {
     exit(2);
   }
 
+  // Initialise the variables
   initialiseVars(letters, lines);
   
+  // Copy the text accross, and count the characters.
   copyTxt(inFile, outFile, letters, lines);
+
+  // Output the number of numbers and letters in the file.
   for(int i = 0; i < numLetters; i++) {
     cout << (char) (i+97) << ":" << letters[i] << "  ";
   }
   cout << "lines:" << lines;
   cout << endl;
+
+  // Output the results to a file
+  writeTotal(letters, lines);
 }
 
 void initialiseVars( unsigned int *letters, unsigned int &lines) {
@@ -72,5 +82,18 @@ void countChar(int c, unsigned int *letters, unsigned int &lines) {
 }
 
 void writeTotal(unsigned int *letters, unsigned int &lines) {
-  cout << "writing" << endl;
+  cout << "Writing Results to results.txt" << endl;
+
+  // Open results file0
+  ofstream resultsFile("results.txt", ios::out);
+  if( !resultsFile ) {
+    cerr << "Results file could not be opened" << endl;
+    exit(3);
+  }
+
+  // Output the number of numbers and letters in the file to results.txt
+  for(int i = 0; i < numLetters; i++) {
+    resultsFile << (char) (i+97) << ":" << letters[i] << "  ";
+  }
+  resultsFile << "lines:" << lines << endl;
 }
