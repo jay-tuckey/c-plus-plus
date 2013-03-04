@@ -1,0 +1,25 @@
+kldf
+Length is 0
+5  is in list
+7  is in list
+6  is in list
+9  is in list
+9 6 7 5 
+List1: 5 7 6 
+List2: 9 
+1  is in list
+1 9 6 7 5 
+List1: 5 1 
+List2: 7 6 9 
+4  not in list.
+5  found in list.
+9  found in list.
+10  not in list.
+List is not full.
+5  is deleted
+List is not full.
+1  is deleted
+6  is deleted
+9  is deleted
+7 
+

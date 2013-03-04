@@ -1,0 +1,12 @@
+/* A fraction class */
+
+
+
+class Fraction {
+ public:
+  Fraction(int numer, int denom);
+  
+  
+ private:
+  
+};
