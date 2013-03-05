@@ -77,6 +77,14 @@ public:
   // Pre:  List has been initialized.
   // Post: The list is empty
 
+  void MergeLists(SortedType& list1, SortedType& list2, SortedType& result);
+  // Function: Merge two sorted lists into a third sorted list.
+  // Pre:  list1 and list2 have been initialised and are sorted by
+  //       key using function ComparedTo.
+  //       list1 and list2 do not have any keys in common.
+  // Post: Result is a sorted list that contains all of the items from list1
+  //       and list2.
+
 private:
   int length;
   ItemType info[MAX_ITEMS];

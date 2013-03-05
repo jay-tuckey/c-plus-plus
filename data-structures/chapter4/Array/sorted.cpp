@@ -1,6 +1,7 @@
 // Implementation file for sorted.h
 
 #include "sorted.h"
+
 SortedType::SortedType()
 {
   length = 0;
@@ -97,3 +98,21 @@ ItemType SortedType::GetNextItem()
   return info[currentPos];
 }
 
+void SortedType::MergeLists(SortedType& list1, SortedType& list2, SortedType& result)
+{
+  int length = list1.GetLength();
+  int i;
+  
+  list1.ResetList();
+  for(i = 0; i < length; i++) {
+    result.PutItem(list1.GetNextItem());
+  }
+  
+  length = list2.GetLength();
+  list2.ResetList();
+  
+  for(i = 0; i < length; i++) {
+    result.PutItem(list2.GetNextItem());
+  }
+  
+}

@@ -4,8 +4,10 @@ PutItem 7
 PutItem 6
 PutItem 9
 PrintList
+MergeLists
 PutItem 1
 PrintList
+MergeLists
 GetItem 4
 GetItem 5
 GetItem 9

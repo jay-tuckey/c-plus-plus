@@ -2,7 +2,7 @@
 // ItemType.h. 
 
 #include <fstream>
-const int MAX_ITEMS = 5;
+const int MAX_ITEMS = 50;
 enum RelationType  {LESS, GREATER, EQUAL};
 
 class ItemType 

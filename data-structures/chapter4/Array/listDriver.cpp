@@ -78,10 +78,27 @@ int main()
         outFile << "List is full." << endl;
       else outFile << "List is not full."  << endl;  
     else if (command == "MakeEmpty")
-	  list.MakeEmpty();
-	else if (command == "PrintList")
-	  PrintList(outFile, list);
-	else cout << " Command not recognized." << endl;
+      list.MakeEmpty();
+    else if (command == "PrintList")
+      PrintList(outFile, list);
+    else if (command == "MergeLists") {
+      SortedType testList, mergeTo;
+      item.Initialize(2);
+      testList.PutItem(item);
+      item.Initialize(4);
+      testList.PutItem(item);
+      item.Initialize(8);
+      testList.PutItem(item);
+      item.Initialize(12);
+      testList.PutItem(item);
+      
+      PrintList(outFile, testList);
+
+      list.MergeLists(list, testList, mergeTo);
+      outFile << "Merged Lists: ";
+      PrintList(outFile, mergeTo);
+    }
+    else cout << " Command not recognized." << endl;
     numCommands++;
     cout <<  " Command number " << numCommands << " completed." 
          << endl;
