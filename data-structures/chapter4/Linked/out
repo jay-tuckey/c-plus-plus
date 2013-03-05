@@ -1,0 +1,26 @@
+lsfkj
+GetLength Length is 0
+PutItem5 is inserted
+PutItem7 is inserted
+PutItem6 is inserted
+PutItem9 is inserted
+PrintList5679
+MergeLists24812
+Merged Lists: 245678912
+PutItem1 is inserted
+PrintList15679
+MergeLists24812
+Merged Lists: 1245678912
+GetItem4 not in list.
+GetItem5 found in list.
+GetItem9 found in list.
+GetItem10 not in list.
+IsFullList is not full.
+DeleteItem5 is deleted
+IsFullList is not full.
+DeleteItem1 is deleted
+DeleteItem6 is deleted
+DeleteItem9 is deleted
+PrintList7
+MakeEmptyPrintList
+Error

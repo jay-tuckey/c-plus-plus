@@ -16,6 +16,7 @@ public:
   void DeleteItem(ItemType item);
   void ResetList();
   ItemType GetNextItem();
+  void MergeLists(SortedType& list1, SortedType& list2, SortedType& result);
 
 private:
   NodeType* listData;
