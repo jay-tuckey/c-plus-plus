@@ -6,7 +6,6 @@
 #include <cstring>
 #include <cstdlib>
 
-#include "unsorted.h"
 
 using namespace std;
 void PrintList(ofstream& outFile, UnsortedType& list);
@@ -22,9 +21,6 @@ int main()
   string command;        // operation to be executed
   
   int number;
-  ItemType item;
-  UnsortedType list;
-  bool found;
   int numCommands;
 
 
