@@ -8,7 +8,6 @@
 
 
 using namespace std;
-void PrintList(ofstream& outFile, UnsortedType& list);
 
 int main()
 {
