@@ -1,0 +1,15 @@
+LogCommand
+AddItem a
+Print
+Print
+GetLength
+AddItem b
+AddItem 5
+GetLength
+AddItem g
+AddItem i
+AddItem e
+AddItem y
+GetLength
+Print
+Quit
