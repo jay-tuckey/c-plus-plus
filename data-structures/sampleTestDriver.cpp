@@ -50,14 +50,13 @@ int main()
   numCommands = 0;
   while (command != "Quit")
     { 
-      if (command == "Log Command")
-	{
+      if (command == "Log Command") {
 	  inFile >> number; 
 	  item.Initialize(number);
 	  list.PutItem(item);
 	  item.Print(outFile);
 	  outFile << " is in list" << endl;
-	}
+      }
       
       else
 	cout << command << " is not a valid command." << endl;
