@@ -51,11 +51,7 @@ int main()
   while (command != "Quit")
     { 
       if (command == "Log Command") {
-	  inFile >> number; 
-	  item.Initialize(number);
-	  list.PutItem(item);
-	  item.Print(outFile);
-	  outFile << " is in list" << endl;
+	outFile << "Logging Test Command";
       }
       
       else
