@@ -1,0 +1,28 @@
+kldfj
+GetLength Length is 0
+PutItem5 is inserted
+PutItem7 is inserted
+PutItem6 is inserted
+PutItem9 is inserted
+Search Item 9 was found: 1
+Search Item 5 was found: 1
+Search Item 12 was found: 0
+PrintList5679
+PutItem1 is inserted
+Search Item 1 was found: 1
+Search Item 18 was found: 0
+PrintList15679
+GetItem4 not in list.
+GetItem5 found in list.
+GetItem9 found in list.
+GetItem10 not in list.
+IsFullList is not full.
+DeleteItem5 is deleted
+IsFullList is not full.
+DeleteItem1 is deleted
+DeleteItem6 is deleted
+DeleteItem9 is deleted
+PrintList7
+MakeEmptySearch Item 5 was found: 0
+PrintList
+Error
